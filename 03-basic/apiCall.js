@@ -5,7 +5,24 @@
             
 
 
-            async function fetchUsers() {
+            // async function fetchUsers() {
+            //     try {
+            //         const response = await fetch('https://dummyjson.com/users');
+                    
+            //         if (!response.ok) {
+            //             throw new Error('Network response was not ok');
+            //         }
+                    
+            //         const data = await response.json();
+            //         console.log(data);
+            //     } catch (error) {
+            //         console.error('There was a problem with the fetch operation:', error);
+            //     }
+            // }
+            
+            // fetchUsers();
+
+            (async () => {
                 try {
                     const response = await fetch('https://dummyjson.com/users');
                     
@@ -18,8 +35,5 @@
                 } catch (error) {
                     console.error('There was a problem with the fetch operation:', error);
                 }
-            }
-            
-            // Call the function to fetch users
-            fetchUsers();
+            })();
 
